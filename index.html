@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desincriptador</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1><img class="logo" src="https://static-s.aa-cdn.net/img/ios/1225776635/b3ede73760b7e1501dada15d61da224e?v=1" alt="alura logo"></h1>
+    </header>
+
+    <main>
+        <section class="encriptador">   
+            <!-- <input class="entrada-texto" type="text" placeholder="Ingrese el texto aqui"> -->
+            <textarea id="texto-entrada" class="entrada-texto" placeholder="Ingrese el texto aqui" rows="13"></textarea>
+            <!-- <div class="botones"> -->
+                <p class="text-validacion">Solo letras minúsculas y sin acentos</p>
+                <button id="btnEncriptar" class="btn-entrada btn-encriptar">Encriptar</button>
+                <button id="btnDesencriptar" class="btn-entrada btn-desincriptar">Desencriptar!</button>
+            <!-- </div> -->
+        </section><section class="mensaje" id="mensaje">
+            <div class="nomensaje" id="nomensaje">
+                <img class="imgSinMensaje" src="src/img.PNG" alt="">
+                <p class="no-mensaje-subtitulo">Ningun mensaje fue encontrado</p>
+                <p class="no-mensaje-desc">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            
+            <p class="resultado" id="resultado">
+                
+            </p>
+            <button id="btnCopiar" class="btnCopiar">Copiar</button>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
